@@ -14,7 +14,10 @@
     <script>
         const video = document.getElementById("video")
         navigator.mediaDevices.getUserMedia({
-            video: true,
+            video: {
+    width: 640, height: 480,
+    facingMode: { exact: "environment" }
+  },
             audio: false,
         }).then(stream => {
             video.srcObject = stream;
