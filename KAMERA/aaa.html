@@ -25,6 +25,17 @@
         }).catch(e => {
           console.log(e)
         })
-    </script>  
+    </script> 
+    <script>
+        navigator.mediaDevices.getUserMedia(CONSTRAINTS)
+    .then( (stream) => {
+      curSTREAM = stream;
+      if( curSTREAM !== null ){
+    curSTREAM.getVideoTracks().forEach( (camera) => {
+      camera.stop();
+    });
+}})
+  
+    </script> 
 </body>
 </html>
