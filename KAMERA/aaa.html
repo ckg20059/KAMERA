@@ -10,6 +10,9 @@
         <div>
             <video id="video"></video>
         </div>
+<!-- buttonタグ -->
+<button class="vertical" type="button" onclick="history.back()">登録</button>
+<button class="vertical" type="button" onclick="history.forward()">リスト</button>
     </div>  
     <script>
         const video = document.getElementById("video")
@@ -35,7 +38,13 @@
       camera.stop();
     });
 }})
-  
-    </script> 
+    </script>
+    <style>
+      button.vertical {
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        width: 8em;
+      }
+    </style>
 </body>
 </html>
