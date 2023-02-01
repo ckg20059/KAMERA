@@ -1,0 +1,7 @@
+TODO
+
+本日の作業
+１．Excelの表に備品リストを起こす
+２．現在ある、Javascript,HTMLをすべてgithubにアップすること
+３．（星野）github pages でアクセスできるようにする
+４．
